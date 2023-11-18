@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    {{>navbar}}
+    <h2 style="text-align: center;">Register</h2>
+    <div class="con">
+        <form class="form-container" action="/register" method="POST">
+        <div class="col1">
+            <div class="form-group">
+                <label for="username">First Name:</label>
+                <input type="text" id="username" name="firstname" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone:</label>
+                <input type="number" minlength="10" maxlength="10" id="phone" name="phone" placeholder="Enter your phone" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+        </div>
+        <div class="col2">
+            <div class="form-group">
+                <label for="usernamel">Last Name:</label>
+                <input type="text" id="usernamel" name="lastname" placeholder="Enter your last name" required>
+            </div>
+            <div class="form-group">
+                <label for="">
+                <input type="radio" name="gender" value="male" checked>
+                <span>Male</span>
+                </label>
+                <label for="">
+                <input type="radio" name="gender" value="female" checked>
+                <span>Female</span>
+                </label>
+            </div>
+            
+             <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number"  id="age" name="age" placeholder="Enter your age" required>
+            </div>
+            <div class="form-group">
+                <label for="Cpassword">Confirm Password:</label>
+                <input type="password" id="Cpassword" name="confirmpassword" placeholder="Enter your password" required>
+            </div>
+        </div>
+         <input class="login-button" type="submit" value="Register" />
+    </form>
+    
+    </div>
+   
+
+</body>
+</html>
